@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: 0;
+    -moz-box-sizing: 0;
+    -webkit-box-sizing: 0;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+body{
+    background-color: #999999;
+    position: relative;
+}
+.header{
+    height: 100vh;
+    background-image: url('./images/navBG.jpg');
+    background-size: cover;
+}
+.header .navbar{
+    height: 100px;
+}
+.header .navbar ul{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header .navbar ul li{
+    list-style: none;
+    
+}
+.header .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+#logo{
+    padding-top: 20px;
+    width: 5em;
+    cursor: auto;
+}
+#img{
+    width: 5em;
+}
+.menubar{
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    z-index: -1;
+}
+.text{
+    font-size: 6em;
+    color: #fff;
+    text-align: center;
+    padding: 25vh 0 0 0;
+}
+.text2{
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    padding: 5vh 0 0 0;
+    text-transform: uppercase;
+}
+.myInfo{
+    height: 100vh;
+    padding: 20vh 5vw;
+}
+.myInfo > article:first-of-type{
+    width: 80%;
+    background-color: #fff;
+    margin: auto;
+    text-align: center;
+    min-height: 100px;
+    margin: auto;
+    border-radius: 10px;
+    border: #bebdbd solid 1px;
+    padding: 10px;
+}
+.infos{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.infos article{
+    background-color: #fff;
+    width: 30%;
+    min-height: 50vh;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    border: #bebdbd solid 1px;
+    
+
+}
+.img{
+    height: 100vh;
+    background-image: url('./images/girl.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+
+}
+footer{
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 2em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header .navbar ul{
+        height: 100px;
+        display: block;
+        float: right;
+    }
+    .header .navbar ul li:not(#logo){
+        list-style: none;
+        display: none;
+        padding: 20px;
+    }
+    .menubar{
+        
+        z-index: 1;
+    }
+    #logo{
+        padding-top: 20px;
+        width: 5em;
+        cursor: auto;
+        position: absolute;
+        left: 50px;
+    }
+    .text{
+        font-size: 3.8em;
+        color: #fff;
+        text-align: center;
+        padding: 20vh 0 0 0;
+    }
+    .text2{
+        font-size: 2.3em;
+        color: #fff;
+        text-align: center;
+        padding: 5vh 0 0 0;
+        text-transform: uppercase;
+    }
+    
+    .infos{
+        padding-top: 50px;
+        display: block;
+    }
+    .infos article{
+        background-color: #fff;
+        width: 70%;
+        min-height: 50vh;
+        max-height: 100vh;
+        text-align: center;
+        padding: 15px;
+        border-radius: 20px;
+        border: #bebdbd solid 1px;
+        margin: auto auto 50px;
+    }
+    
+    .img{
+        margin-top: 90vh;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
