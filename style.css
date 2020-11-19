@@ -1,176 +1,581 @@
 *{
     padding: 0;
     margin: 0;
-
-    box-sizing: 0;
-    -moz-box-sizing: 0;
-    -webkit-box-sizing: 0;
-    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+    font-family: 'Tajawal';
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.8rem;
+}
+p{
+    font-size: 1.2rem;
+}
+article{
+    font-size: 1.3rem;
 
 }
-
 body{
-    background-color: #999999;
-    position: relative;
+    background-color: #f2f2f2;
 }
-.header{
+img{
+    -webkit-user-drag: none;
+    user-select: none;
+    z-index: -2;
+}
+.sec1{
     height: 100vh;
-    background-image: url('./images/navBG.jpg');
+    background-image: url(./images/Untitled-1.png);
     background-size: cover;
+    background-position: center top;
 }
-.header .navbar{
-    height: 100px;
+.sec1 .header{
+    height: 10vh;
 }
-.header .navbar ul{
-    height: 100px;
+.sec1 .header .menuBar{
+    display: none;
+}
+.sec1 .header ul{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.header .navbar ul li{
+.sec1 .header ul img{
+    width: 80px;
+}
+.sec1 .header ul li{
     list-style: none;
-    
+    font-size: 23px;
 }
-.header .navbar ul li a{
+.sec1 .header ul li a{
     text-decoration: none;
-    color: #fff;
+    color: black;
     text-transform: capitalize;
-    font-size: 1.3em;
-}
-#logo{
-    padding-top: 20px;
-    width: 5em;
-    cursor: auto;
-}
-#img{
-    width: 5em;
-}
-.menubar{
-    color: white;
-    font-size: 1.5em;
-    position: absolute;
-    top: 40px;
-    right: 50px;
-    z-index: -1;
-}
-.text{
-    font-size: 6em;
-    color: #fff;
-    text-align: center;
-    padding: 25vh 0 0 0;
-}
-.text2{
-    font-size: 3em;
-    color: #fff;
-    text-align: center;
-    padding: 5vh 0 0 0;
-    text-transform: uppercase;
-}
-.myInfo{
-    height: 100vh;
-    padding: 20vh 5vw;
-}
-.myInfo > article:first-of-type{
-    width: 80%;
-    background-color: #fff;
-    margin: auto;
-    text-align: center;
-    min-height: 100px;
-    margin: auto;
-    border-radius: 10px;
-    border: #bebdbd solid 1px;
-    padding: 10px;
-}
-.infos{
-    padding-top: 50px;
+}   
+.sec1 .content {
     display: flex;
-    justify-content: space-around;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
-.infos article{
-    background-color: #fff;
-    width: 30%;
-    min-height: 50vh;
-    text-align: center;
-    padding: 15px;
-    border-radius: 20px;
-    border: #bebdbd solid 1px;
-    
+.sec1 .content h1{
+    font-family: 'segoe print';
 
+}
+.sec1 .content div{
+    width: 45%;
+    text-align: center;
+}
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    
+}
+.sec2 .content{
+    width: 55%;
+    display: grid;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 50px;
+
+}
+.sec2 .content .leftSide{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: auto;
+    max-height: 100%;
+}
+
+.sec2 .content .leftSide h1{
+    width: 97%;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'segoe print';
+
+}
+.sec2 .content .leftSide p{
+    width: 97%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    height: max-content;
+    border-radius: 10px;
+}
+.sec2 .content .rightSide{
+    width: 100%;
+    margin: auto;
+    
+}
+.sec2 .content .rightSide img{
+    width: 100%;
 }
 .img{
-    height: 100vh;
-    background-image: url('./images/girl.jpg');
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-
+    width: 100%;
 }
-footer{
+.img img{
+    
+    width: 100vw;
+    top: -250px;
+    position: absolute;
+}
+.sec3 {
+    margin-top: 100px;
+}
+.sec3 .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 50px;
+    justify-items: center;
+}
+.sec3 .content .box1,
+.sec3 .content .box2,
+.sec3 .content .box3{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+}
+
+.sec3 .content .box1 article,
+.sec3 .content .box2 article,
+.sec3 .content .box3 article{
+    width: 30%;
+    height: 300px;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    overflow: hidden;
     text-align: center;
-    height: 10vh;
-    line-height: 10vh;
-    font-size: 2em;
+    border-radius: 10px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .header .navbar ul{
-        height: 100px;
-        display: block;
-        float: right;
+.sec3 .content .box1 article{background-color: #A858E5;}
+.sec3 .content .box2 article{background-color: #449EEC;}
+.sec3 .content .box3 article{background-color: #6ED89C;}
+
+.sec3 .content .box1 p,
+.sec3 .content .box2 p,
+.sec3 .content .box3 p{
+    font-size: 33px;
+    padding-right: 10px;
+    padding-top: 0;
+    max-height: 33px;
+    line-height: 30px;
+    border-radius: 10px;
+    font-family: 'segoe print';
+
+}
+
+.sec4 {
+    overflow: hidden;
+    display: block;
+    height: fit-content;
+    margin: 100px 0 50px;
+}
+.sec4 .content{
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    margin: auto;
+    gap: 10px;
+}
+.sec4 .content .leftSide{
+    width: fit-content;
+    
+}
+.sec4 .content .leftSide h1{
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #AEF1FF;
+    font-family: 'segoe print';
+}
+.sec4 .content .leftSide p{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #AEF1FF;
+
+}
+.sec4 .content .rightSide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+.sec4 .content .rightSide img{
+    width: 100%;
+}
+footer.footer{
+    height: 50px;
+    background-color: #E8E8E8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) {
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 2rem;
     }
-    .header .navbar ul li:not(#logo){
+    p{
+        font-size: .8rem;
+    }
+    article{
+        font-size: 1.3rem;
+    
+    }
+
+    .sec1 .header{
+        height: 10vh;
+        
+    }
+    .sec1 .header .menuBar{
+        display: block;
+        height: 0;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .sec1 .header .menuBar .li-logo {
         list-style: none;
-        display: none;
+        z-index: 10;
+
+    }
+    .sec1 .header .menuBar .li-logo img{
+        width: 25%;
         padding: 20px;
     }
-    .menubar{
-        
-        z-index: 1;
-    }
-    #logo{
-        padding-top: 20px;
-        width: 5em;
-        cursor: auto;
+    .sec1 .header .menuBar .parBars {
+        max-height: 100px;
+        width: max-content;
         position: absolute;
-        left: 50px;
+        right: 5vh;
+        padding: 20px;
+        z-index: 10;
     }
-    .text{
-        font-size: 3.8em;
-        color: #fff;
-        text-align: center;
-        padding: 20vh 0 0 0;
-    }
-    .text2{
-        font-size: 2.3em;
-        color: #fff;
-        text-align: center;
-        padding: 5vh 0 0 0;
-        text-transform: uppercase;
+    .sec1 .header .menuBar .parBars .bars{
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        margin-bottom: 5px;
+        border-radius: 50px;
+        transition: all 1s;
     }
     
-    .infos{
-        padding-top: 50px;
-        display: block;
-    }
-    .infos article{
-        background-color: #fff;
-        width: 70%;
-        min-height: 50vh;
-        max-height: 100vh;
-        text-align: center;
-        padding: 15px;
-        border-radius: 20px;
-        border: #bebdbd solid 1px;
-        margin: auto auto 50px;
+    
+    .sec1 .header{
+        height: 10vh;
     }
     
-    .img{
-        margin-top: 90vh;
+    .ul{
+        position: fixed;
+        right: 0;
+        width: 100%;
+        height: 70vh;
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: space-around;
+        flex-direction: column;
+        opacity: 0;
+        z-index: -2;
+        transition: all .5s;
     }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+    
+    .sec1 .header ul img{
+        display: none;
+    }
+    .ul li{
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+        flex-basis: 50px;
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+    }
+
+    .sec1{
+        height: 100vh;
+        background-image: url(./images/Untitled-1.png);
+        background-size: cover;
+        background-position: center top;
+        margin: 0 0 100px;
+    }
+    .sec1 .header{
+        height: 10vh;
+    }
+    .sec1 .content {
+        height: 90vh;
+    }
+    
+    .sec1 .content div{
+        width: 90%;
+    }
+    
+
+    
+    .sec2 .content{
+        width: 55%;
+        display: grid;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+        gap: 20px;
+    
+    }
+    .sec2 .content .leftSide{
+        width: 100%;
+        float: both;
+    }
+    
+    .sec2 .content .leftSide h1{
+        width: 97%;
+        border-radius: 10px;
+        font-family: 'segoe print';
+        padding: 0;
+        margin: 0;
+    
+    }
+    .sec2 .content .leftSide p{
+        width: 97%;
+        font-size: 20px;
+        height: max-content;
+        border-radius: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sec3 {
+        margin-top: 100px;
+    }
+    
+
+    .sec3 .content .box1 article,
+    .sec3 .content .box2 article,
+    .sec3 .content .box3 article{
+        padding: 10px;
+    }
+    
+ 
+
+    .sec4 .content{
+        
+        justify-content: center;
+    }
+    footer.footer p {
+        font-size: 1.2rem;
+    }
+
+}
+ 
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) {
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    article{
+        font-size: 1.3rem;
+    
+    }
+
+    .sec1 .content div  {
+        width: 70%;
+    
+    }
+    .sec1 .content div h1 {
+        font-size: 3rem;
+    }
+    .sec1 .content div p {
+        font-size: .9rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 600px) {
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    article{
+        font-size: 1.3rem;
+    
+    }
+
+    .sec1 .content div  {
+        width: 70%;
+    
+    }
+    .sec1 .content div h1 {
+        font-size: 3rem;
+    }
+    .sec1 .content div p {
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    article{
+        font-size: 1.3rem;
+    
+    }
+
+    .sec1 .content div  {
+        width: 70%;
+    
+    }
+    .sec1 .content div h1 {
+        font-size: 3rem;
+    }
+    .sec1 .content div p {
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    article{
+        font-size: 1.3rem;
+    
+    }
+
+    .sec1 .content div  {
+        width: 70%;
+    
+    }
+    .sec1 .content div h1 {
+        font-size: 3rem;
+    }
+    .sec1 .content div p {
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 900px) {
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    article{
+        font-size: 1.3rem;
+    
+    }
+
+    .sec1 .content div  {
+        width: 70%;
+    
+    }
+    .sec1 .content div h1 {
+        font-size: 3rem;
+    }
+    .sec1 .content div p {
+        font-size: 1.2rem;
+    }
+
+    
+}
+@media only screen and (min-width: 1024px) {
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    article{
+        font-size: 1.3rem;
+    
+    }
+
+    .sec1 .content div  {
+        width: 70%;
+    
+    }
+    .sec1 .content div h1 {
+        font-size: 3rem;
+    }
+    .sec1 .content div p {
+        font-size: 1.4rem;
+    }
+
+    
+}
+
+
+.show{
+    opacity: 1;
+    z-index: 9;
+}
+.rotateR{
+    transform: translate(0,10px) rotate(315deg) ;
+    
+}
+.rotateL{
+    transform: translate(0,-10px) rotate(-315deg);
+}
+.hide{
+    opacity: 0;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+
