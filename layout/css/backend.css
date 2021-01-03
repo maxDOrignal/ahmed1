@@ -1,0 +1,97 @@
+
+body{
+    background-color: #0D0000;
+}
+p{
+    margin: 0;
+}
+.conts{
+    height: 100vh;
+}
+.content{
+    height: 100%;
+}
+.content .pageText {
+    position: relative;
+}
+.content .pageText::after {
+    content : "";
+    position: absolute;
+    width: 35%;
+    border-bottom: 5px solid #fff;
+    top: 120%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.content .pageText p {
+    padding-left: 50px;
+    color: #D6D6D6;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.content .pageText p span,
+.content .pageText p span a
+{
+    font-size: 60px;
+    color: #D6D6D6;
+}
+/* start form */
+.form form{
+    
+}
+.form form input{
+    display: block;
+    width: 85%;
+    margin-bottom: 30px;
+    outline: none;
+    background-color: unset;
+    color: #D6D6D6;
+    padding: 1px 10px;
+    border: none;
+    border-bottom: 2px solid #D6D6D6;
+}
+.form form input[type="submit"] {
+    border: 1px solid #fff;
+    width: 40%;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.tips{
+    margin-top: -40px;
+    margin-bottom: -10px;
+    color: #D6D6D6;
+}
+
+.signWith{
+    width: 250px;
+}
+.signWith .signsAccount{
+    border: 1px solid #707070;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 47%;
+}
+.signsAccount img{
+    width: 40%;
+}
+.signsAccount span{
+    width: 40%;
+    font-size: 15px;
+    color: #D6D6D6;
+    padding: 2px;
+}
+
+/* end form */
